@@ -37,7 +37,6 @@ jobs:
         uses: actions/checkout@v4
       - name: load & Cache dependencies
         uses: ./.github/actions/cachedependencies
-      - name: Lint code
       - name: Build website
         run: npm run build
       - name: Upload artifacts
