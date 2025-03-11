@@ -19,8 +19,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v4
       - name: load & Cache dependencies
-        uses: ./.github/actions/cachedependencies
-      - name: Lint code  
+        uses: ./.github/actions/cachedependencies 
       - name: Test code
         id: run-tests
         run: npm run test
